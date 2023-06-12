@@ -11,14 +11,18 @@ const NavbarAnimLayout = ({ children }: { children: React.ReactNode }) => {
         root.current!.childNodes,
         {
           opacity: 0,
-          y: 5,
+          y: 15,
         },
         {
           y: 0,
           opacity: 1,
-          stagger: 0.2,
-          duration: 1,
-          ease: "elastic.out(1, 0.75)",
+          stagger: {
+            each: 0.2,
+            from: "edges",
+          },
+          delay: 0.5,
+          duration: 1.25,
+          ease: "elastic.out(1, 0.5)",
         }
       );
 

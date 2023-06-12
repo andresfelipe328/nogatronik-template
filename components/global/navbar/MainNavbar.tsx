@@ -40,7 +40,7 @@ const MainNavbar = () => {
       <ul className="flex items-center gap-4">
         {NAV.map((link, index) => (
           <li key={index}>
-            <link.icon className="nav-icon" />
+            <link.icon className="nav-icon hover:text-extra hover:scale-110 transition-all duration-300 ease-in-out" />
           </li>
         ))}
       </ul>
