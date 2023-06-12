@@ -21,8 +21,8 @@ const NavbarAnimLayout = ({ children }: { children: React.ReactNode }) => {
             from: "edges",
           },
           delay: 0.5,
-          duration: 1.25,
-          ease: "elastic.out(1, 0.5)",
+          duration: 2.5,
+          ease: "elastic.out(1.25, .5)",
         }
       );
 
@@ -30,7 +30,10 @@ const NavbarAnimLayout = ({ children }: { children: React.ReactNode }) => {
     }, root);
   }, []);
   return (
-    <header className="flex items-center justify-between p-4" ref={root}>
+    <header
+      className="flex items-center justify-between p-4 backdrop-blur-sm sticky top-0 shadow-small-shadow z-10"
+      ref={root}
+    >
       {children}
     </header>
   );

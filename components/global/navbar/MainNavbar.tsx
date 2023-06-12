@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import { FaUser, FaShoppingCart } from "react-icons/fa";
-import { BiSearchAlt } from "react-icons/bi";
 import { MdFavorite } from "react-icons/md";
 
 import NavbarAnimLayout from "@/components/animtedLayouts/NavbarAnimLayout";
@@ -34,7 +33,7 @@ const MainNavbar = () => {
         width={28}
         height={28}
         className=" w-[5rem] logo"
-        alt="bowl with chop sticks, application logo"
+        alt="De Forest Audion vaccum tube"
         priority
       />
       <ul className="flex items-center gap-4">

@@ -1,7 +1,9 @@
-import MainNavbar from "@/components/global/navbar/MainNavbar";
 import "./globals.css";
-import { Oswald } from "next/font/google";
 
+import MainNavbar from "@/components/global/navbar/MainNavbar";
+import MainFooter from "@/components/global/footer/MainFooter";
+
+import { Oswald } from "next/font/google";
 const oswald = Oswald({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,8 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={oswald.className}>
-        <MainNavbar />
-        {children}
+        <main className="overflow-auto h-full">
+          <MainNavbar />
+          {children}
+          <MainFooter />
+        </main>
       </body>
     </html>
   );

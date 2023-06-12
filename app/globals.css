@@ -42,8 +42,9 @@
     @apply font-semibold opacity-90;
   }
 
-  input {
-    @apply p-1 rounded-md font-semibold text-sm outline-none 
+  input,
+  textarea {
+    @apply p-2 text-base rounded-md bg-slate-600 font-semibold outline-none text-light placeholder:text-light placeholder:tracking-wider
       shadow-small-shadow hover:shadow-static-shadow focus:shadow-static-shadow transition-all duration-300 ease-in-out;
   }
 
